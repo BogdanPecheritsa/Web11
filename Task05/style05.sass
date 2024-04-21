@@ -1,0 +1,21 @@
+$widths: (576px, 768px, 992px, 1200px, 1400px)
+$container-widths: (540px, 720px, 960px, 1140px, 1320px)
+$class-suffixes: ('-sm', '-md', '-lg', '-xl', '-xxl')
+
+.container
+  width: 100%
+
+.col-1
+  width: 8.33333333%
+
+.col-12
+  width: 100%
+
+@each $width, $container-width, $class-suffix in zip($widths, $container-widths, $class-suffixes)
+  @media screen and (min-width: $width)
+  .container
+    width: $container-width
+  .col#{$class-suffix}-1
+    width: 8.33333333%
+  .col#{$class-suffix}-12
+    width: 100%

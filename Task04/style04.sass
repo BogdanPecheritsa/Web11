@@ -1,0 +1,6 @@
+$classes: (primary, info, success, warning, danger)
+$colors: (#337ab7, #5bc85c, #5bc0de, #f0ad4e, #d9534f)
+
+@each $class, $color in zip($classes, $colors)
+  .#{$class}
+    background-color: $color
