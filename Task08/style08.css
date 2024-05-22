@@ -1,0 +1,14 @@
+@charset "UTF-8";
+div:after {
+  content: "Додатковий контент для div";
+}
+
+section:after {
+  content: "Додатковий контент для section";
+}
+
+p:after {
+  content: "Додатковий контент для p";
+}
+
+/*# sourceMappingURL=style08.css.map */

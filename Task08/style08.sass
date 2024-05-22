@@ -1,0 +1,7 @@
+=string-concat($tag, $content)
+  #{$tag}:after
+    content: "Додатковий контент для " + $content
+
++string-concat('div', 'div')
++string-concat('section', 'section')
++string-concat('p', 'p')
