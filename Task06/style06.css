@@ -1,18 +1,21 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .table {
-  width: 100%;
+  width: 20%;
   border-collapse: collapse;
 }
 .table th, .table td {
-  border: 1px solid #ddd;
+  border: 1px solid darkblue;
   padding: 8px;
   text-align: left;
-}
-.table th:nth-child(odd), .table td:nth-child(odd) {
-  background-color: #f9f9f9;
+  background-color: #20c1d8;
+  width: auto;
 }
 .table th a, .table td a {
-  color: #3498db;
-  text-decoration: none;
+  color: #E36990;
 }
 .table th a:hover, .table td a:hover {
   text-decoration: underline;
