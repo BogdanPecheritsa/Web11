@@ -1,22 +1,35 @@
-$table-header-bg: #1d95c6
-$table-row-bg:  #1d95c6
-$table-link-color: #c30807
+div
+  padding: 2px
 
-.table
-  width: 100%
-  border-collapse: collapse
+=border($width, $color)
+  border: $width solid $color
 
-  th
-    background-color: $table-header-bg
-    color: #000000
+=size($width, $height)
+  width: $width
+  height: $height
 
-  td
-    background-color: $table-row-bg
-    padding: 8px
-    border: 1px solid #0d397c
-
-    a
-      color: $table-link-color
-
-  tr:nth-child(even)
-    background-color: #f2f2f2
+.block
+  background-color: mediumblue
+  position: absolute
+  +size(600px, 400px)
+  +border(1px, #333)
+  .block-2
+    background-color: green
+    position: relative
+    +size(550px, 350px)
+    +border(1px, #333)
+    .block-3
+      background-color: cornflowerblue
+      position: relative
+      +size(500px, 300px)
+      +border(1px, #333)
+      .block-4
+        background-color: orange
+        position: relative
+        +size(450px, 250px)
+        +border(1px,#333)
+        .block-5
+          background-color: indianred
+          position: relative
+          +size(400px, 200px)
+          +border(1px, #333)
